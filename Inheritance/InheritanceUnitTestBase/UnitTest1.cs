@@ -17,7 +17,7 @@ namespace InheritanceUnitTestBase
         {
             ICalculation<int> CalcObj = Calculations.GetCalculationInstance;
             int value = CalcObj.Add(new List<int> { 1, 2, 3 });
-            CalcObj.Log(new List<string>() { "Unit test Base" });
+            CalcObj.Log(new List<string>() { "Unit test Base Updated" });
             int mathvalues = CalcObj.Multiply(new List<int> { 1, 2, 3 });
             Assert.AreEqual(6, value);
 
