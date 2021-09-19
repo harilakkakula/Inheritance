@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,6 +39,7 @@ namespace Inheritance
             Console.WriteLine($"Read the Message :{message}");
         }
 
+        [ExcludeFromCodeCoverage]
         public int Multiply(List<int> values)
         {
             return values.Sum();
